@@ -61,7 +61,14 @@
               </div>
             </div>
           </div>
-
+          <div >
+            <label for="nickname">전화번호</label>
+            <input type="tel"class="form-control" pattern="[0-9]{11}" title="전화번호를 입력해주세요." required>
+            <div class="invalid-feedback">
+              전화번호를 입력해주세요.
+          </div>
+          <h1></h1>
+          <input type="button" class="form-control col-md-3" onclick="" value="전화번호 인증"><br>
           <div class="row">
             <div class="col-md-6 mb-3">
               <label for="email">이메일</label>
@@ -71,7 +78,7 @@
               </div>
             </div>
             <div class="col-md-6 mb-3">
-              <label for="nickname">선택</label>
+              <label for="choice">선택</label>
               <input type="text" class="form-control" id="email2" placeholder="" value="" required>
               <select name="" id="domain" onchange="emailSelect()">
                 <option value="@">직접입력</option>
@@ -81,7 +88,7 @@
                 <option value="@kakao.com">카카오</option>
             </select>
               <div class="invalid-feedback">
-                별명을 입력해주세요.
+                이메일을 입력해주세요.
               </div>
             </div>
           </div>
@@ -95,7 +102,7 @@
               </div>
             </div>
             <div class="col-md-6 mb-3">
-              <label for="nickname">주소</label>
+              <label for="address2">주소</label>
               <input type="text" class="form-control" id="sample6_address" placeholder="주소" required>
               <div class="invalid-feedback">
                   주소를 입력해주세요.
@@ -106,11 +113,11 @@
 
         <div class="row">
             <div class="col-md-6 mb-3">
-              <label for="address2">상세주소<span class="text-muted">&nbsp;(필수 아님)</span></label>
+              <label for="address3">상세주소<span class="text-muted">&nbsp;(필수 아님)</span></label>
               <input type="text" id="sample6_detailAddress" class="form-control" placeholder="상세주소">
             </div>
             <div class="col-md-6 mb-3">
-              <label for="nickname">참고항목</label>
+              <label for="address4">참고항목</label>
               <input type="text" id="sample6_extraAddress" class="form-control" placeholder="참고항목">
             </div>
           </div>
